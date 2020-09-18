@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".TeacherDashboard"></activity>
-        <activity android:name=".StudentDashboard" />
+        <activity android:name=".StudentDashboard"
+            android:screenOrientation="portrait"/>
         <activity android:name=".TeacherLogin" />
         <activity android:name=".StudentLogin" />
         <activity android:name=".Selection" />
