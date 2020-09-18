@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "674493236639",
+    "firebase_url": "https://cunavigator-72198.firebaseio.com",
+    "project_id": "cunavigator-72198",
+    "storage_bucket": "cunavigator-72198.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:674493236639:android:8e4ed92b96b8f70a0ca9aa",
+        "android_client_info": {
+          "package_name": "in.christuniversity.cunavigator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "674493236639-iqs2qr5aamprt5qfb9ffh8e6q9c90esn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.christuniversity.cunavigator",
+            "certificate_hash": "0d50a6db3ec6862bd8d85371a26aa93cebf55b69"
+          }
+        },
+        {
+          "client_id": "674493236639-ffo8a9odlabuhed98g5hsbgf9kq31vbq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBI1Kapm4MxKY1bsmZOLUQqPYO4Vh5PfIg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "674493236639-ffo8a9odlabuhed98g5hsbgf9kq31vbq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

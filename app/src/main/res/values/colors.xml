@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fff</color>
+    <color name="colorPrimaryDark">#5B86E5</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="backStart">#36D1DC</color>
+    <color name="backEnd">#5B86E5</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="dashboard_background">#F2F4FC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_white">#fefdff</color>
+    <color name="lightGray">#F2F2F2</color>
+    <color name="disabledBtnBg">#999999</color>
+
+
+</resources>

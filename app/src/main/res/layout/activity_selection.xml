@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
+    tools:context=".Selection">
+
+
+    <Button
+        android:id="@+id/students"
+        android:layout_width="283dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="448dp"
+        android:alpha="0.9"
+        android:background="@drawable/text_input_bg"
+        android:fontFamily="@font/mangosans_regular"
+        android:shadowRadius="0"
+        android:text="Student"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="18sp"
+        app:backgroundTint="@color/design_default_color_on_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/teachers"
+        android:layout_width="283dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.9"
+        android:background="@drawable/text_input_bg"
+        android:fontFamily="@font/mangosans_regular"
+        android:shadowRadius="0"
+        android:text="Teacher"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="18sp"
+        app:backgroundTint="@color/design_default_color_on_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/students"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="379dp"
+        android:layout_height="365dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/students"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.069"
+        app:srcCompat="@drawable/selectionbg" />
+</androidx.constraintlayout.widget.ConstraintLayout>
