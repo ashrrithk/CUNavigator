@@ -2,14 +2,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-<!--    <item-->
-<!--        android:title="Account"-->
-<!--        android:id="@+id/account"-->
-<!--        android:enabled="true"-->
-<!--        app:showAsAction="always"-->
-<!--        android:icon="@drawable/ic_account"/>-->
+    <item
+        android:title="Account"
+        android:id="@+id/account"
+        android:enabled="true"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_account"/>
+    <item
+        android:title="Nav"
+        android:id="@+id/nav"
+        android:enabled="true"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_menu_black_24dp"/>
 
-<!--    <item-->
+
+    <!--    <item-->
 <!--        android:title="Favourate"-->
 <!--        android:id="@+id/heart"-->
 <!--        android:enabled="true"-->
