@@ -40,86 +40,85 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Welcome" />
 
-<!--    <com.google.android.material.textfield.TextInputLayout-->
-<!--        android:id="@+id/username"-->
-<!--        android:layout_width="319dp"-->
-<!--        android:layout_height="76dp"-->
-<!--        android:layout_marginTop="90dp"-->
-<!--        android:hint="username"-->
-<!--        app:boxBackgroundColor="#EDEDED"-->
-<!--        app:counterEnabled="true"-->
-<!--        app:counterMaxLength="7"-->
-<!--        app:hintTextColor="@color/black"-->
-<!--        app:layout_constraintBottom_toTopOf="@+id/password"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.493"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/Christites"-->
-<!--        app:startIconDrawable="@drawable/ic_student">-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username"
+        android:layout_width="319dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="90dp"
+        android:hint="email"
+        app:boxBackgroundColor="#EDEDED"
+        app:hintTextColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Christites"
+        app:startIconDrawable="@drawable/ic_student">
 
-<!--        <com.google.android.material.textfield.TextInputEditText-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:fontFamily="@font/mangosans_regular"-->
-<!--            android:inputType="number"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:textCursorDrawable="@drawable/color_cursor" />-->
-<!--    </com.google.android.material.textfield.TextInputLayout>-->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mangosans_regular"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@drawable/color_cursor" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-<!--    <com.google.android.material.textfield.TextInputLayout-->
-<!--        android:id="@+id/password"-->
-<!--        android:layout_width="324dp"-->
-<!--        android:layout_height="80dp"-->
-<!--        android:layout_marginTop="18dp"-->
-<!--        android:layout_marginBottom="32dp"-->
-<!--        android:hint="password"-->
-<!--        app:boxBackgroundColor="#EDEDED"-->
-<!--        app:counterEnabled="true"-->
-<!--        app:counterMaxLength="8"-->
-<!--        app:hintTextColor="@color/black"-->
-<!--        app:layout_constraintBottom_toTopOf="@+id/login"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/username"-->
-<!--        app:startIconDrawable="@drawable/ic_key">-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password"
+        android:layout_width="324dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="32dp"
+        android:hint="password"
+        app:boxBackgroundColor="#EDEDED"
+        app:counterEnabled="true"
+        app:counterMaxLength="8"
+        app:hintTextColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        app:startIconDrawable="@drawable/ic_key">
 
-<!--        <com.google.android.material.textfield.TextInputEditText-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:fontFamily="@font/mangosans_regular"-->
-<!--            android:inputType="number"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:textCursorDrawable="@drawable/color_cursor" />-->
-<!--    </com.google.android.material.textfield.TextInputLayout>-->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mangosans_regular"
+            android:inputType="number|numberPassword"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@drawable/color_cursor" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-<!--    <Button-->
-<!--        android:id="@+id/login"-->
-<!--        android:layout_width="312dp"-->
-<!--        android:layout_height="65dp"-->
-<!--        android:layout_marginStart="32dp"-->
-<!--        android:layout_marginTop="32dp"-->
-<!--        android:layout_marginEnd="32dp"-->
-<!--        android:background="@drawable/splash_background"-->
-<!--        android:fontFamily="@font/mangosans_regular"-->
-<!--        android:onClick="login"-->
-<!--        android:text="Login"-->
-<!--        android:textAllCaps="false"-->
-<!--        android:textColor="@color/black"-->
-<!--        android:textSize="16sp"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.485"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/password" />-->
+    <Button
+        android:id="@+id/login"
+        android:layout_width="312dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/splash_background"
+        android:fontFamily="@font/mangosans_regular"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
 
-<!--    <ProgressBar-->
-<!--        android:id="@+id/login_progress_bar"-->
-<!--        style="?android:attr/progressBarStyle"-->
-<!--        android:layout_width="16dp"-->
-<!--        android:layout_height="16dp"-->
-<!--        android:layout_marginEnd="16dp"-->
-<!--        android:visibility="invisible"-->
-<!--        app:layout_constraintBottom_toBottomOf="@+id/login"-->
-<!--        app:layout_constraintEnd_toEndOf="@+id/login"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/login" />-->
+    <ProgressBar
+        android:id="@+id/login_progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/login"
+        app:layout_constraintEnd_toEndOf="@+id/login"
+        app:layout_constraintTop_toTopOf="@+id/login" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
