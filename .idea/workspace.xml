@@ -6,15 +6,42 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fbd7749-e744-4721-b026-77262f28d6b5" name="Default Changelist" comment="student Dashboard modification">
+    <list default="true" id="2fbd7749-e744-4721-b026-77262f28d6b5" name="Default Changelist" comment="test">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_v4_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_media_media_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_annotations_4_9_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_disklrucache_4_9_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_9_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_9_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_smarteist_autoimageslider_1_3_9_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_student_dashboard.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_student_dashboard.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="KFC3Y18918000405" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="dd191a410403" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -34,18 +61,22 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1gcM1rlvio6F1I8Bp8krJJXrS5Q" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FoodDeliveryApp-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -127,70 +158,81 @@
       <option name="project" value="LOCAL" />
       <updated>1600437969406</updated>
     </task>
-    <task id="LOCAL-00002" summary="student Dashboard modification">
-      <created>1600450366783</created>
+    <task id="LOCAL-00002" summary="test">
+      <created>1600765964873</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1600450366783</updated>
+      <updated>1600765964873</updated>
     </task>
     <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
-      <path value="$USER_HOME$" />
+      <path value="$PROJECT_DIR$/../.." />
     </ignored-roots>
     <MESSAGE value="test" />
-    <MESSAGE value="student Dashboard modification" />
-    <option name="LAST_COMMIT_MESSAGE" value="student Dashboard modification" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="178" width="800" height="684" key="#Notifications" timestamp="1600438555089">
       <screen x="0" y="27" width="1920" height="979" />
     </state>
     <state x="555" y="178" width="800" height="684" key="#Notifications/0.27.1920.979@0.27.1920.979" timestamp="1600438555089" />
-    <state x="266" y="27" width="798" height="741" key="CommitChangelistDialog2" timestamp="1600493767801">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state x="768" y="223" width="374" height="594" key="#com.intellij.ide.util.MemberChooser" timestamp="1601385883040">
+      <screen x="0" y="27" width="1920" height="979" />
     </state>
-    <state x="266" y="27" width="798" height="741" key="CommitChangelistDialog2/0.27.1366.741@0.27.1366.741" timestamp="1600493767801" />
-    <state x="374" y="27" width="1162" height="979" key="CommitChangelistDialog2/0.27.1920.979@0.27.1920.979" timestamp="1600438148861" />
+    <state x="768" y="223" width="374" height="594" key="#com.intellij.ide.util.MemberChooser/0.27.1920.979@0.27.1920.979" timestamp="1601385883040" />
+    <state x="643" y="244" width="624" height="551" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1601288159360">
+      <screen x="0" y="27" width="1920" height="979" />
+    </state>
+    <state x="643" y="244" width="624" height="551" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.27.1920.979@0.27.1920.979" timestamp="1601288159360" />
+    <state x="374" y="27" width="1162" height="979" key="CommitChangelistDialog2" timestamp="1601438009486">
+      <screen x="0" y="27" width="1920" height="979" />
+    </state>
+    <state x="374" y="27" width="1162" height="979" key="CommitChangelistDialog2/0.27.1920.979@0.27.1920.979" timestamp="1601438009486" />
     <state x="182" y="113" width="1536" height="820" key="DiffContextDialog" timestamp="1600437988918">
       <screen x="0" y="27" width="1920" height="979" />
     </state>
     <state x="182" y="113" width="1536" height="820" key="DiffContextDialog/0.27.1920.979@0.27.1920.979" timestamp="1600437988918" />
-    <state x="529" y="214" width="374" height="372" key="FileChooserDialogImpl" timestamp="1600448068419">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state x="743" y="274" width="424" height="491" key="FileChooserDialogImpl" timestamp="1600438452271">
+      <screen x="0" y="27" width="1920" height="979" />
     </state>
-    <state x="529" y="214" width="374" height="372" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1600448068419" />
     <state x="743" y="274" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.979@0.27.1920.979" timestamp="1600438452271" />
     <state x="806" y="410" width="298" height="219" key="Github.ShareDialog" timestamp="1600438575941">
       <screen x="0" y="27" width="1920" height="979" />
     </state>
     <state x="806" y="410" width="298" height="219" key="Github.ShareDialog/0.27.1920.979@0.27.1920.979" timestamp="1600438575941" />
-    <state x="319" y="27" width="900" height="741" key="SettingsEditor" timestamp="1600493676091">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="319" y="27" width="900" height="741" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1600493676091" />
-    <state x="449" y="151" width="1022" height="737" key="SettingsEditor/0.27.1920.979@0.27.1920.979" timestamp="1600438563472" />
-    <state x="395" y="194" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1600450380589">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="395" y="194" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1600450380589" />
-    <state x="555" y="248" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1920.979@0.27.1920.979" timestamp="1600438133320" />
-    <state x="437" y="267" key="com.intellij.ide.util.TipDialog" timestamp="1600492998227">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="437" y="267" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1600492998227" />
-    <state x="614" y="344" key="com.intellij.ide.util.TipDialog/0.27.1920.979@0.27.1920.979" timestamp="1600437591350" />
-    <state x="726" y="431" width="457" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600438379291">
+    <state x="666" y="224" width="578" height="591" key="MultipleFileMergeDialog" timestamp="1600525300736">
       <screen x="0" y="27" width="1920" height="979" />
     </state>
-    <state x="726" y="431" width="457" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1920.979@0.27.1920.979" timestamp="1600438379291" />
+    <state x="666" y="224" width="578" height="591" key="MultipleFileMergeDialog/0.27.1920.979@0.27.1920.979" timestamp="1600525300736" />
+    <state x="449" y="151" width="1022" height="737" key="SettingsEditor" timestamp="1600438563472">
+      <screen x="0" y="27" width="1920" height="979" />
+    </state>
+    <state x="449" y="151" width="1022" height="737" key="SettingsEditor/0.27.1920.979@0.27.1920.979" timestamp="1600438563472" />
+    <state x="555" y="248" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1601391215276">
+      <screen x="0" y="27" width="1920" height="979" />
+    </state>
+    <state x="555" y="248" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1920.979@0.27.1920.979" timestamp="1601391215276" />
+    <state x="614" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1601434824489">
+      <screen x="0" y="27" width="1920" height="979" />
+    </state>
+    <state x="614" y="344" key="com.intellij.ide.util.TipDialog/0.27.1920.979@0.27.1920.979" timestamp="1601434824489" />
+    <state x="726" y="431" width="467" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601437655217">
+      <screen x="0" y="27" width="1920" height="979" />
+    </state>
+    <state x="726" y="431" width="467" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1920.979@0.27.1920.979" timestamp="1601437655217" />
     <state x="730" y="405" width="450" height="230" key="git4idea.ui.GitResetDialog" timestamp="1600438400444">
       <screen x="0" y="27" width="1920" height="979" />
     </state>
     <state x="730" y="405" width="450" height="230" key="git4idea.ui.GitResetDialog/0.27.1920.979@0.27.1920.979" timestamp="1600438400444" />
+    <state x="623" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1600765863312">
+      <screen x="0" y="27" width="1920" height="979" />
+    </state>
+    <state x="623" y="240" width="672" height="678" key="search.everywhere.popup/0.27.1920.979@0.27.1920.979" timestamp="1600765863312" />
   </component>
 </project>
