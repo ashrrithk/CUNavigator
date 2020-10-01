@@ -1,5 +1,6 @@
 package in.christuniversity.cunavigator;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -11,7 +12,11 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class Splash extends AppCompatActivity {
+    FirebaseAuth.AuthStateListener mAuthListener;
 
     private static int SPLASH_SCREEN = 2000;
     //Variables
@@ -45,5 +50,24 @@ TextView main, sub;
                         finish();
             }
         },SPLASH_SCREEN);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseAuth.getInstance();
+        mAuthListener = new FirebaseAuth.AuthStateListener(){
+            @Override
+            public  void  onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth){
+                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                if(user!=null){
+                    Intent intent = new Intent(Splash.this, StudentDashboard.class);
+                    startActivity(intent);
+                    finish();
+                }
+            }
+
+
+        };
     }
 }

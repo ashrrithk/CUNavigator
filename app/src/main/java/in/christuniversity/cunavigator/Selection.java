@@ -10,8 +10,12 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 
-public class Selection extends AppCompatActivity {
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
+public class Selection extends AppCompatActivity {
+    private FirebaseAuth mAuth;
+    private FirebaseUser mCurrentUser;
 Button student, teacher;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +23,9 @@ Button student, teacher;
         setContentView(R.layout.activity_selection);
         student = findViewById(R.id.students);
         teacher = findViewById(R.id.teachers);
+
+        mAuth = FirebaseAuth.getInstance();
+        mCurrentUser = mAuth.getCurrentUser();
 
 
         student.setOnClickListener(new View.OnClickListener() {
@@ -69,6 +76,19 @@ Button student, teacher;
                 .show();
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if (mCurrentUser != null) {
+            sendUserToHome();
+        }
+    }
 
-
+    private void sendUserToHome() {
+        Intent homeIntent = new Intent(Selection.this, StudentDashboard.class);
+        homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(homeIntent);
+        finish();
+    }
 }

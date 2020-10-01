@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 
 import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
 import com.smarteist.autoimageslider.IndicatorView.draw.controller.DrawController;
@@ -36,9 +37,20 @@ public class StudentDashboard extends AppCompatActivity {
         setContentView(R.layout.activity_student_dashboard);
 
 
-
-
+        EditText search = findViewById(R.id.search);
         sliderView = findViewById(R.id.imageSlider);
+
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(android.view.View v) {
+                Intent search = new Intent(StudentDashboard.this,Search.class);
+                startActivity(search);
+            }
+        });
+
+
+
+
 
 
         sliderView.setSliderAdapter(new SliderAdapterExample(this));
@@ -107,4 +119,6 @@ public class StudentDashboard extends AppCompatActivity {
                 })
                 .show();
     }
+
+
 }

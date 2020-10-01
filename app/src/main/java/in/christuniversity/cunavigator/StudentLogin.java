@@ -16,12 +16,14 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.regex.Pattern;
 
 public class StudentLogin extends AppCompatActivity implements View.OnClickListener {
 
-    private FirebaseAuth mAuth;
+     FirebaseAuth mAuth;
+     FirebaseUser mCurrentUser;
     private TextInputEditText stuEmail, stuPassword;
    private ProgressBar login_progress_bar;
 
@@ -35,6 +37,7 @@ public class StudentLogin extends AppCompatActivity implements View.OnClickListe
         login_progress_bar = findViewById(R.id.login_progress_bar);
 
         mAuth = FirebaseAuth.getInstance();
+        mCurrentUser = mAuth.getCurrentUser();
         findViewById(R.id.login).setOnClickListener(this);
 
         login_progress_bar.setVisibility(View.INVISIBLE);
@@ -78,6 +81,7 @@ public class StudentLogin extends AppCompatActivity implements View.OnClickListe
                     Intent dashboard = new Intent(StudentLogin.this, StudentDashboard.class);
                     dashboard.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(dashboard);
+                    finish();
 
                 }
                 else{
@@ -90,5 +94,13 @@ public class StudentLogin extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
          userLogin();
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+
     }
 }
