@@ -1,6 +1,7 @@
 package in.christuniversity.cunavigator;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -82,9 +83,19 @@ public class Search extends AppCompatActivity {
             }
 
             @Override
-            protected void onBindViewHolder(@NonNull UsersViewHolder holder, int position, @NonNull Users model) {
+            protected void onBindViewHolder(@NonNull UsersViewHolder holder, final int position, @NonNull Users model) {
                 // ...
                 holder.setDetails(getApplicationContext(), model.getName(), model.getDepartment(), model.getImage());
+
+                holder.itemView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        String visit_teacher_profile = getRef(position).getKey();
+
+                        Intent teacher_profile = new Intent(Search.this,TeacherProfile.class);
+                        startActivity(teacher_profile);
+                    }
+                });
             }
         };
 

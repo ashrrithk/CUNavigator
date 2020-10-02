@@ -40,7 +40,6 @@ public class StudentLogin extends AppCompatActivity implements View.OnClickListe
         mCurrentUser = mAuth.getCurrentUser();
         findViewById(R.id.login).setOnClickListener(this);
 
-        login_progress_bar.setVisibility(View.INVISIBLE);
 
     }
 
@@ -48,6 +47,7 @@ public class StudentLogin extends AppCompatActivity implements View.OnClickListe
 
         String email = stuEmail.getText().toString().trim();
         String password = stuPassword.getText().toString().trim();
+        login_progress_bar.setVisibility(View.VISIBLE);
 
         if(email.isEmpty()){
             stuEmail.setError("Email is Required");
@@ -73,7 +73,6 @@ public class StudentLogin extends AppCompatActivity implements View.OnClickListe
             return;
         }
 
-        login_progress_bar.setVisibility(View.VISIBLE);
         mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
