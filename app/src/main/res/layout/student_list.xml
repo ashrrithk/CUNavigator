@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:padding="28dp"
+    android:paddingEnd="40dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/student_card"
+    android:layout_margin="5dp"
+    android:layout_marginEnd="7dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/studentName_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/alef"
+        android:paddingStart="16dp"
+        android:paddingEnd="0dp"
+        android:text="Student : "
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/studentNameA_tv"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:paddingStart="16dp"
+        android:paddingEnd="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorLightBlack"
+        android:layout_marginStart="105dp"
+        android:text="Yash Martin" />
+
+    <TextView
+        android:id="@+id/studentDegree_tv"
+        android:layout_width="wrap_content"
+        android:textSize="24sp"
+        android:paddingStart="16dp"
+        android:paddingEnd="0dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/alef"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:text="Class : " />
+
+    <TextView
+        android:id="@+id/studentDegreeA_tv"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:paddingStart="16dp"
+        android:paddingEnd="0dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="105dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorLightBlack"
+        android:layout_marginTop="53dp"
+        android:text="5 BCA-A " />
+
+    <TextView
+        android:id="@+id/studentTiming_tv"
+        android:layout_width="wrap_content"
+        android:textSize="24sp"
+        android:paddingStart="16dp"
+        android:paddingEnd="0dp"
+        android:fontFamily="@font/alef"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="100dp"
+        android:text="Timing : " />
+
+    <TextView
+        android:id="@+id/studentTimingA_tv"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:paddingStart="16dp"
+        android:paddingEnd="0dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="105dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorLightBlack"
+        android:layout_marginTop="103dp"
+        android:text="09:00 - 09:15" />
+
+</RelativeLayout>
