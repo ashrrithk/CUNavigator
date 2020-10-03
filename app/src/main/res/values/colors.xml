@@ -16,5 +16,6 @@
     <color name="colorOffGreen">#2DBB8B </color>
     <color name="colorOffYellow">#DAE197 </color>
     <color name="colorLightBlack">#0C1613</color>
+    <color name="colorDarkGrey">#696969</color>
 
 </resources>

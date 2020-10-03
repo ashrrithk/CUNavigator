@@ -55,19 +55,19 @@ TextView main, sub;
     @Override
     protected void onStart() {
         super.onStart();
-        FirebaseAuth.getInstance();
-        mAuthListener = new FirebaseAuth.AuthStateListener(){
-            @Override
-            public  void  onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth){
-                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-                if(user!=null){
-                    Intent intent = new Intent(Splash.this, StudentDashboard.class);
-                    startActivity(intent);
-                    finish();
-                }
-            }
-
-
-        };
+//        FirebaseAuth.getInstance();
+//        mAuthListener = new FirebaseAuth.AuthStateListener(){
+//            @Override
+//            public  void  onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth){
+//                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+//                if(user!=null){
+//                    Intent intent = new Intent(Splash.this, StudentDashboard.class);
+//                    startActivity(intent);
+//                    finish();
+//                }
+//            }
+//
+//
+//        };
     }
 }

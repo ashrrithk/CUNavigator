@@ -1,5 +1,6 @@
 package in.christuniversity.cunavigator;
 
+import android.app.ProgressDialog;
 import android.graphics.Color;
 import android.os.Bundle;
 
@@ -10,49 +11,78 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
 import com.smarteist.autoimageslider.SliderAnimations;
 import com.smarteist.autoimageslider.SliderView;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import in.christuniversity.cunavigator.Model.SliderItem;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link HomeFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class HomeFragment extends Fragment {
 
-    SliderView sliderView2;
-    private SliderAdapterExample adapter2;
-    public HomeFragment() {
-        // Required empty public constructor
-    }
-
-    public static HomeFragment newInstance(String param1, String param2) {
-        return new HomeFragment();
-    }
-
+    private FirebaseAuth mAuth = FirebaseAuth.getInstance();
+    private FirebaseDatabase mDb = FirebaseDatabase.getInstance();
+    private DatabaseReference mRef = mDb.getReference();
+    private ProgressDialog pd;
+    ImageView DP;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
     }
 
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        ImageView DP = getView().findViewById(R.id.teacherDp);
-        Glide.with(DP.getContext()).load("https://kp.christuniversity.in/KnowledgePro/images/EmployeePhotos/E3212.jpg").into(DP);
+    private void updateUI(View view){
+
+        DP = getView().findViewById(R.id.teacherDp);
+        final TextView Teacher_Welcome = getView().findViewById(R.id.teacher_welcome);
+        final TextView Teacher_Name = getView().findViewById(R.id.teacher_name);
+        final TextView Teacher_Designation = getView().findViewById(R.id.teacher_designation);
+        final TextView Teacher_Dept = getView().findViewById(R.id.teacher_department);
+        mRef.child("Teachers").child(mAuth.getUid()).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                HashMap<String,String> td = (HashMap<String,String>)snapshot.getValue();
+                if(td!=null){
+                    for(String keys:td.keySet()){
+                        Log.i("Keys",keys);}
+                        Glide.with(DP.getContext()).load(td.get("image")).into(DP);
+                        Teacher_Welcome.setText("Welcome");
+                        Teacher_Name.setText(td.get("Name"));
+                        Teacher_Designation.setText(td.get("designation"));
+                        Teacher_Dept.setText(td.get("Department"));
+                        getView().findViewById(R.id.fragment_home).setAlpha((float)1);
+                        pd.dismiss();
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+
+        });
+
+
+
+        //Recycler View for meeting
         RecyclerView programminglist = (RecyclerView) getView().findViewById(R.id.StudentList);
         programminglist.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,false));
         ArrayList<StudentMeet> data = new ArrayList<>();
@@ -62,6 +92,14 @@ public class HomeFragment extends Fragment {
         data.add(new StudentMeet("Yash Martin","5 BCA-A","9:45 - 10:00"));
         data.add(new StudentMeet("Yash Martin","5 BCA-A","10:00 - 10:15"));
         programminglist.setAdapter(new ProgammingAdapter(data,getContext()));
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        updateUI(view);
+        pd = ProgressDialog.show(getContext(),"Loading Data","Please Wait");
+        getView().findViewById(R.id.fragment_home).setAlpha((float)0.5);
 
     }
 

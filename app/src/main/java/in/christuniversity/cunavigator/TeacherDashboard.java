@@ -18,6 +18,7 @@ import android.view.KeyEvent;
 import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class TeacherDashboard extends AppCompatActivity {
 
@@ -93,6 +94,7 @@ public class TeacherDashboard extends AppCompatActivity {
                 .setPositiveButton(Html.fromHtml("<font color='#FF7F27'>Yes</font>"), new DialogInterface.OnClickListener() {
 
                     public void onClick(DialogInterface arg0, int arg1) {
+                        FirebaseAuth.getInstance().signOut();
                         finish();
                     }
                 })
