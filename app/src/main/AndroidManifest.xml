@@ -15,6 +15,7 @@
             android:name=".StudentDashboard"
             android:screenOrientation="portrait" />
         <activity android:name=".TeacherLogin" />
+        <activity android:name=".TeacherProfile"/>
         <activity android:name=".StudentLogin" />
         <activity android:name=".Selection" />
         <activity android:name=".Splash">

@@ -18,6 +18,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -44,7 +45,7 @@ public class StudentDashboard extends AppCompatActivity implements NavigationVie
     private SliderAdapterExample adapter;
     CardView slide;
     private Object View;
-    private TextView eventText;
+    private Button eventText;
     private FirebaseAuth mAuth;
     private FirebaseUser mCurrentUser;
 
@@ -60,7 +61,7 @@ public class StudentDashboard extends AppCompatActivity implements NavigationVie
         mAuth = FirebaseAuth.getInstance();
         mCurrentUser = mAuth.getCurrentUser();
 
-        eventText = findViewById(R.id.events);
+        eventText = findViewById(R.id.event);
         hamburger = findViewById(R.id.hamburger_menu);
         contentView = findViewById(R.id.dashboard);
 
@@ -210,7 +211,7 @@ public class StudentDashboard extends AppCompatActivity implements NavigationVie
 
             case R.id.logout:
                 FirebaseAuth.getInstance().signOut();
-                Intent signOutIntent = new Intent(StudentDashboard.this, StudentLogin.class);
+                Intent signOutIntent = new Intent(StudentDashboard.this, Selection.class);
                 startActivity(signOutIntent);
                 finish();
         }

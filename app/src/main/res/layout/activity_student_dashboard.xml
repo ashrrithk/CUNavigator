@@ -11,12 +11,11 @@
         android:id="@+id/navigation_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
         android:layout_gravity="start"
+        android:background="@color/white"
         app:headerLayout="@layout/navigation_header"
-        app:menu="@menu/navigation_drawer"
-        app:itemTextAppearance="@font/mangosans_regular"
-        app:itemIconTint="#849AAA" />
+        app:itemIconTint="#849AAA"
+        app:menu="@menu/navigation_drawer" />
 <androidx.constraintlayout.widget.ConstraintLayout
     android:id="@+id/dashboard"
     android:layout_width="match_parent"
@@ -123,18 +122,6 @@
             app:srcCompat="@drawable/ic_location" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-    <TextView
-        android:id="@+id/events"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
-        android:layout_marginEnd="205dp"
-        android:text="events"
-        app:layout_constraintBottom_toTopOf="@+id/cv_slider_studentDashboard"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <ImageView
         android:id="@+id/hamburger_menu"
         android:layout_width="20dp"
@@ -145,6 +132,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/hamburger" />
+
+    <Button
+        android:id="@+id/event"
+        android:layout_width="64dp"
+        android:layout_height="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/cv_slider_studentDashboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

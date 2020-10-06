@@ -8,22 +8,22 @@
         android:enabled="true"
         app:showAsAction="always"
         android:icon="@drawable/ic_account"/>
-    <item
-        android:title="Nav"
-        android:id="@+id/nav"
-        android:enabled="true"
-        app:showAsAction="always"
-        android:icon="@drawable/ic_menu_black_24dp">
+<!--    <item-->
+<!--        android:title="Nav"-->
+<!--        android:id="@+id/nav"-->
+<!--        android:enabled="true"-->
+<!--        app:showAsAction="always"-->
+<!--        android:icon="@drawable/ic_menu_black_24dp">-->
 
-        <menu>
-            <item
-                android:id="@+id/events"
-                android:title="Events" />
+<!--        <menu>-->
+<!--            <item-->
+<!--                android:id="@+id/events"-->
+<!--                android:title="Events" />-->
 
-        </menu>
+<!--        </menu>-->
 
 
-    </item>
+<!--    </item>-->
 
 
     <!--    <item-->

@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".TeacherProfile">
 
+    <Button
+        android:id="@+id/meet_time"
+        android:layout_width="129dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
+        android:text="Time"
+        app:backgroundTint="@color/design_default_color_secondary_variant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toEndOf="@+id/meet_date"
+        app:layout_constraintTop_toBottomOf="@+id/designation" />
+
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="89dp"
@@ -54,4 +66,40 @@
         app:layout_constraintHorizontal_bias="0.08"
         app:layout_constraintStart_toEndOf="@+id/imageView7"
         app:layout_constraintTop_toBottomOf="@+id/department" />
+
+    <Button
+        android:id="@+id/call_btn"
+        android:layout_width="118dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/fui_idp_button_background_twitter"
+        android:text="Call"
+        app:backgroundTint="@color/backEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/chat_btn"
+        app:layout_constraintHorizontal_bias="0.271"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/chat_btn"
+        android:layout_width="127dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="60dp"
+        android:text="Chat"
+        app:backgroundTint="@color/colorOffGreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/meet_date"
+        android:layout_width="133dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="48dp"
+        android:text="Date"
+        app:backgroundTint="@color/design_default_color_secondary_variant"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 </androidx.constraintlayout.widget.ConstraintLayout>
