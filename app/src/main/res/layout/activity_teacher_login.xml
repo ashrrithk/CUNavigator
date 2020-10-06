@@ -24,7 +24,7 @@
 
 
     <TextView
-        android:id="@+id/Christites"
+        android:id="@+id/Teacherss"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
@@ -39,33 +39,34 @@
         app:layout_constraintTop_toBottomOf="@+id/Welcome" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/username"
+        android:id="@+id/username_teacher"
         android:layout_width="319dp"
         android:layout_height="76dp"
         android:layout_marginTop="90dp"
         android:hint="username"
         app:boxBackgroundColor="#EDEDED"
         app:counterEnabled="true"
-        app:counterMaxLength="7"
+        app:counterMaxLength="20"
         app:hintTextColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Christites"
+        app:layout_constraintTop_toBottomOf="@+id/Teacherss"
         app:startIconDrawable="@drawable/ic_teacher">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Teacher_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/mangosans_regular"
-            android:inputType="number"
+            android:inputType="textEmailAddress"
             android:textColor="@color/black"
             android:textCursorDrawable="@drawable/color_cursor" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/password"
+        android:id="@+id/password_teacher"
         android:layout_width="324dp"
         android:layout_height="80dp"
         android:layout_marginTop="18dp"
@@ -78,14 +79,15 @@
         app:layout_constraintBottom_toTopOf="@+id/login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username"
+        app:layout_constraintTop_toBottomOf="@+id/username_teacher"
         app:startIconDrawable="@drawable/ic_key">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Teacher_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/mangosans_regular"
-            android:inputType="number"
+            android:inputType="number|numberPassword"
             android:textColor="@color/black"
             android:textCursorDrawable="@drawable/color_cursor" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -102,11 +104,12 @@
         android:text="Login"
         android:textAllCaps="false"
         android:textColor="@color/black"
+        android:onClick="login"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintTop_toBottomOf="@+id/password_teacher" />
 
     <ProgressBar
         android:id="@+id/login_progress_bar"

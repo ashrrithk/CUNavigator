@@ -12,6 +12,10 @@
     <color name="light_white">#fefdff</color>
     <color name="lightGray">#F2F2F2</color>
     <color name="disabledBtnBg">#999999</color>
-
+    <color name="colorWhiteTranparent">#80ffffff </color>
+    <color name="colorOffGreen">#2DBB8B </color>
+    <color name="colorOffYellow">#DAE197 </color>
+    <color name="colorLightBlack">#0C1613</color>
+    <color name="colorDarkGrey">#696969</color>
 
 </resources>

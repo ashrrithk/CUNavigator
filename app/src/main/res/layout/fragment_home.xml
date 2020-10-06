@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_home"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/teacher_welcome"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/alef"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:text="" />
+        <ImageView
+            android:id="@+id/teacherDp"
+            android:layout_width="100dp"
+            android:layout_gravity="center"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            />
+
+    <TextView
+        android:id="@+id/teacher_name"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/alef"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:text="" />
+    <TextView
+        android:id="@+id/teacher_designation"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/alef"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="16sp"
+        android:text="" />
+    <TextView
+        android:id="@+id/teacher_department"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/alef"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="16sp"
+        android:text="" />
+    <TextView
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Student Meetings for the Day"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/StudentList"
+        android:background="@color/white"
+        android:layout_marginTop="15dp"
+        android:layout_height="200dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>
