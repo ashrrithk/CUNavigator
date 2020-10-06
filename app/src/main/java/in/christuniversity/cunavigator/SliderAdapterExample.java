@@ -1,6 +1,7 @@
 package in.christuniversity.cunavigator;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +16,8 @@ import in.christuniversity.cunavigator.Model.SliderItem;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static androidx.core.content.ContextCompat.startActivities;
 
 public class SliderAdapterExample extends
         SliderViewAdapter<SliderAdapterExample.SliderAdapterVH> {
@@ -63,8 +66,11 @@ public class SliderAdapterExample extends
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, "This is item in position " + position, Toast.LENGTH_SHORT).show();
+                Intent eventIntent = new Intent(v.getContext(), Events.class);
+                context.startActivity(eventIntent);
+                //Toast.makeText(context, "This is item in position " + position, Toast.LENGTH_SHORT).show();
             }
+
         });
     }
 
