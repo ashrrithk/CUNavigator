@@ -79,9 +79,9 @@ Button student, teacher;
     @Override
     protected void onStart() {
         super.onStart();
-//        if (mCurrentUser != null) {
-//            sendUserToHome();
-//        }
+        if (mCurrentUser != null) {
+            sendUserToHome();
+        }
     }
 
     private void sendUserToHome() {

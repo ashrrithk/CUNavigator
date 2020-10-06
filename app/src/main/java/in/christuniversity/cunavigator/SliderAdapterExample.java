@@ -66,8 +66,8 @@ public class SliderAdapterExample extends
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent eventIntent = new Intent(v.getContext(), Events.class);
-                context.startActivity(eventIntent);
+//                Intent eventIntent = new Intent(v.getContext(), Events.class);
+//                context.startActivity(eventIntent);
                 //Toast.makeText(context, "This is item in position " + position, Toast.LENGTH_SHORT).show();
             }
 
