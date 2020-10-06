@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ds_inflate"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/ds_periodnum"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/colorDarkBlue"
+        android:text="P0"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        />
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_gravity= "center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/ds_subjectName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alef"
+            android:gravity="center"
+            android:text="Python Programming"
+            android:textColor="@color/colorDarkBlue"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/ds_timing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="09:00 - 10:00"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/colorLightDarkgrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/ds_subjectCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_semibold"
+            android:layout_gravity="center"
+            android:text="BCA543"
+            android:textColor="@color/colorOrange"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/ds_blockDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:textColor="@color/colorLightDarkgrey"
+            android:text="06 (Block III)"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

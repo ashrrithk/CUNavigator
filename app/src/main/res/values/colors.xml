@@ -17,5 +17,7 @@
     <color name="colorOffYellow">#DAE197 </color>
     <color name="colorLightBlack">#0C1613</color>
     <color name="colorDarkGrey">#696969</color>
-
+    <color name="colorLightDarkgrey">#8f9096</color>
+    <color name="colorDarkBlue">#000d85</color>
+    <color name="colorOrange">#FFA500</color>
 </resources>
